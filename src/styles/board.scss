@@ -1,0 +1,19 @@
+.board-grid {
+  @apply grid grid-cols-3;
+  width: fit-content;
+
+  .board-box {
+    @apply relative;
+    @apply border border-black;
+    @apply rounded-sm;
+    @apply text-center font-bold;
+    @apply flex flex-row justify-center items-center;
+    font-size: 4.5rem;
+    min-width: 120px;
+    min-height: 120px;
+
+    &:hover {
+      @apply bg-gray;
+    }
+  }
+}
